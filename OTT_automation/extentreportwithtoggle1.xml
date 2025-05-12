@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+    <!-- Theme and Metadata -->
+    <theme>DARK</theme>
+    <encoding>UTF-8</encoding>
+    <protocol>HTTPS</protocol>
+    <timelineEnabled>true</timelineEnabled>
+    <enableOfflineMode>false</enableOfflineMode>
+    <thumbnailForBase64>false</thumbnailForBase64>
+    <documentTitle>OTT Testing Report</documentTitle>
+    <reportName>OTT Test Automation Report</reportName>
+    <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+
+    <!-- System Info -->
+    <systemInfo>
+      <info name="OS Details" value="Windows 11" />
+      <info name="OS version" value="10.0" />
+      <info name="Java version" value="23.0.1" />
+      <info name="URL" value="https://www.etwwin.com/home" />
+      <info name="Username" value="sarankumar2002vrp@gmail.com" />
+      <info name="Password" value="Test@2024" />
+      <info name="Browser Name" value="chrome" />
+      <info name="Browser Version" value="135.0.7049.85" />
+    </systemInfo>
+
+    <!-- Custom CSS -->
+    <css><![CDATA[
+      /* Logo Styling */
+      .nav-logo {
+        content: url('file://D:/eclipse/OTT_automation/Logo/win-logo.png');
+        height: 50px !important;
+        width: auto !important;
+        margin-right: 20px !important;
+        display: block !important;
+      }
+
+      /* Report Title */
+      .report-name {
+        text-align: center !important;
+        display: block !important;
+        width: 100% !important;
+        font-size: 24px !important;
+        font-weight: bold !important;
+        margin-top: 10px !important;
+        color: inherit !important;
+      }
+
+      /* Test Status Colors */
+      .status-pass {
+        background-color: #28a745 !important;
+        color: white !important;
+      }
+      .status-fail {
+        background-color: #dc3545 !important;
+        color: white !important;
+      }
+
+      /* Toggle Button - Non-overlapping */
+      #darkMode
+      .Container {
+        position: absolute !important;
+        top: 16px !important;
+        right: 325px !important;
+        z-index: 100 !important;
+        display: flex !important;
+        align-items: center !important;
+      }
+      .theme-switch-label {
+        margin-right: 8px !important;
+        font-size: 14px !important;
+        color: inherit !important;
+      }
+      .toggle-slider {
+        width: 50px !important;
+        height: 25px !important;
+        background-color: #ccc !important;
+        border-radius: 25px !important;
+        position: relative !important;
+        cursor: pointer !important;
+        transition: 0.4s !important;
+      }
+      .toggle-circle {
+        position: absolute !important;
+        top: 3px !important;
+        left: 3px !important;
+        height: 19px !important;
+        width: 19px !important;
+        background-color: white !important;
+        border-radius: 50% !important;
+        transition: 0.4s !important;
+      }
+
+      /* COMPLETE DARK MODE STYLING */
+      body.dark-mode,
+      body.dark-mode .nav-wrapper,
+      body.dark-mode .category-view,
+      body.dark-mode .test-view {
+        background-color: #121212 !important;
+        color: #e0e0e0 !important;
+      }
+      body.dark-mode .card,
+      body.dark-mode .card-panel,
+      body.dark-mode .details-view,
+      body.dark-mode .material-table {
+        background-color: #1e1e1e !important;
+        border-color: #333 !important;
+      }
+      body.dark-mode table,
+      body.dark-mode table th,
+      body.dark-mode table td {
+        background-color: #1e1e1e !important;
+        color: #e0e0e0 !important;
+        border-color: #333 !important;
+      }
+      body.dark-mode .test-name,
+      body.dark-mode .test-desc,
+      body.dark-mode .node-name,
+      body.dark-mode .label,
+      body.dark-mode .timestamp,
+      body.dark-mode .report-name {
+        color: #e0e0e0 !important;
+      }
+      body.dark-mode .dropdown-content {
+        background-color: #1e1e1e !important;
+      }
+      body.dark-mode .dropdown-content li > a {
+        color: #e0e0e0 !important;
+      }
+      body.dark-mode .toggle-slider {
+        background-color: #555 !important;
+      }
+    ]]></css>
+
+    <!-- JavaScript Implementation -->
+    <scripts><![CDATA[
+      document.addEventListener('DOMContentLoaded', function() {
+        // Create toggle container
+        const toggleHTML = `
+          <div id="darkModeContainer">
+            <span class="theme-switch-label">Dark Mode</span>
+            <div class="toggle-slider" id="darkModeToggle">
+              <span class="toggle-circle"></span>
+            </div>
+          </div>`;
+        
+        // Insert into nav-right if available
+        const navRight = document.querySelector('.nav-right');
+        if (navRight) {
+          navRight.insertAdjacentHTML('beforeend', toggleHTML);
+        } else {
+          // Fallback to body insertion
+          document.body.insertAdjacentHTML('afterbegin', toggleHTML);
+        }
+
+        // Initialize from localStorage
+        if (localStorage.getItem('darkMode') === 'true') {
+          document.body.classList.add('dark-mode');
+          document.querySelector('.toggle-circle').style.transform = 'translateX(25px)';
+          document.querySelector('.toggle-slider').style.backgroundColor = '#4CAF50';
+        }
+
+        // Toggle functionality
+        document.getElementById('darkModeToggle').addEventListener('click', function() {
+          const isDark = !document.body.classList.contains('dark-mode');
+          document.body.classList.toggle('dark-mode');
+          localStorage.setItem('darkMode', isDark);
+          
+          const circle = document.querySelector('.toggle-circle');
+          const slider = document.querySelector('.toggle-slider');
+          circle.style.transform = isDark ? 'translateX(25px)' : 'translateX(0)';
+          slider.style.backgroundColor = isDark ? '#4CAF50' : '#ccc';
+        });
+      });
+    ]]></scripts>
+  </configuration>
+</extentreports>

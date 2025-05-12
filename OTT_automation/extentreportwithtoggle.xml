@@ -1,0 +1,345 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+
+     Theme and Metadata 
+    <theme>STANDARD</theme>
+    <encoding>UTF-8</encoding>
+    <protocol>HTTPS</protocol>
+    <timelineEnabled>true</timelineEnabled>
+    <enableOfflineMode>false</enableOfflineMode>
+    <thumbnailForBase64>false</thumbnailForBase64>
+    <documentTitle>OTT Testing Report</documentTitle>
+    <reportName>OTT Test Automation Report</reportName>
+    <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+
+     System Info 
+    <systemInfo>
+      <info name="OS Details" value="Windows 11" />
+      <info name="OS version" value="10.0" />
+      <info name="Java version" value="23.0.1" />
+      <info name="URL" value="https://www.etwwin.com/home" />
+      <info name="Username" value="sarankumar2002vrp@gmail.com" />
+      <info name="Password" value="Test@2024" />
+      <info name="Browser Name" value="chrome" />
+      <info name="Browser Version" value="135.0.7049.85" />
+    </systemInfo>
+
+     Custom CSS 
+   <css><![CDATA[
+  .nav-logo {
+    content: url('file://D:/eclipse/OTT_automation/Logo/win-logo.png');
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+  }
+
+  .report-name {
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .test-name {
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  .status-pass {
+    background-color: #28a745 !important;
+    color: white !important;
+  }
+
+  .status-fail {
+    background-color: #dc3545 !important;
+    color: white !important;
+  }
+
+  .theme-switch {
+    position: fixed;
+    top: 16px;
+    right: 340px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+  }
+
+  .slider {
+    width: 50px;
+    height: 25px;
+    background-color: #d5d0c0;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .slider .toggle-circle {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 19px;
+    width: 19px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+
+  /* Dark Mode Theme Fixes */
+ body.dark-mode {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .nav-wrapper,
+body.dark-mode .side-nav,
+body.dark-mode .top-bar,
+body.dark-mode .test-list,
+body.dark-mode .tests-view,
+body.dark-mode .details-view,
+body.dark-mode .card-panel,
+body.dark-mode .test-details,
+body.dark-mode .material-table,
+body.dark-mode .material-table td,
+body.dark-mode .material-table th,
+body.dark-mode .status,
+body.dark-mode .timestamp,
+body.dark-mode .test-content,
+body.dark-mode .info,
+body.dark-mode .label,
+body.dark-mode .test-name,
+body.dark-mode .report-name,
+body.dark-mode .main-wrapper,
+body.dark-mode .test-detail-panel,
+body.dark-mode .duration,
+body.dark-mode .test-header 
+body.dark-mode .test-attributes * {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 #ffffff !important;
+}
+
+
+
+body.dark-mode .status-pass {
+  background-color: #218838 !important;
+  color: #fff !important;
+}
+
+body.dark-mode .status-fail {
+  background-color: #c82333 !important;
+  color: #fff !important;
+}
+
+body.dark-mode .slider {
+ background-color: #fecd2f;
+ }
+
+body.dark-mode .toggle-circle {
+  background-color: #e0e0e0 !important;
+}
+
+body.dark-mode .test-detail-panel .info {
+  background-color: #2a2a2a !important;
+}
+
+body.dark-mode .test-detail-panel a,
+body.dark-mode a {
+  color: #80cbc4 !important;
+}
+
+body.dark-mode .material-table td span,
+body.dark-mode .material-table td div {
+  color: #fffefe !important;
+}
+body.dark-mode .p{
+  color: #ffffff !important;
+}
+
+]]></css>
+
+<js><![CDATA[
+window.addEventListener('DOMContentLoaded', function () {
+  const toggleHTML = `
+    <div class="theme-switch" title="Toggle Dark Mode">
+      <input type="checkbox" id="darkToggle" style="display:none;">
+      <span class="slider">
+        <span class="toggle-circle" id="circle"></span>
+      </span>
+    </div>`;
+
+  document.body.insertAdjacentHTML('beforeend', toggleHTML);
+
+  const toggle = document.getElementById('darkToggle');
+  const circle = document.getElementById('circle');
+
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      document.body.classList.add('dark-mode');
+      toggle.checked = true;
+      circle.style.transform = 'translateX(25px)';
+    } else {
+      document.body.classList.remove('dark-mode');
+      toggle.checked = false;
+      circle.style.transform = 'translateX(0)';
+    }
+  }
+
+  const savedTheme = localStorage.getItem('theme');
+  applyTheme(savedTheme || 'light');
+
+  document.querySelector('.slider').addEventListener('click', () => {
+    const newTheme = toggle.checked ? 'light' : 'dark'; // toggling
+    applyTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+    console.log('Dark mode toggled:', newTheme);
+  });
+
+  console.log('Dark mode script loaded');
+});
+
+]]></js>
+
+
+
+  </configuration>
+</extentreports>
+-->
+
+<extentreports>
+  <configuration>
+
+    <!-- Theme and Metadata -->
+    <theme>STANDARD</theme>
+    <encoding>UTF-8</encoding>
+    <protocol>HTTPS</protocol>
+    <timelineEnabled>true</timelineEnabled>
+    <enableOfflineMode>false</enableOfflineMode>
+    <thumbnailForBase64>false</thumbnailForBase64>
+    <documentTitle>OTT Testing Report</documentTitle>
+    <reportName>OTT Test Automation Report</reportName>
+    <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+
+    <!-- System Info -->
+    <systemInfo>
+      <info name="OS Details" value="Windows 11" />
+      <info name="OS version" value="10.0" />
+      <info name="Java version" value="23.0.1" />
+      <info name="URL" value="https://www.etwwin.com/home" />
+      <info name="Username" value="sarankumar2002vrp@gmail.com" />
+      <info name="Password" value="Test@2024" />
+      <info name="Browser Name" value="chrome" />
+      <info name="Browser Version" value="135.0.7049.85" />
+    </systemInfo>
+
+    <!-- Custom CSS -->
+ <css><![CDATA[
+  /* Your existing styles... */
+  
+  /* Improved Toggle Button Styles */
+  .theme-switch {
+    position: fixed;
+    top: 16px;
+    left: 325px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255,255,255,0.9);
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .theme-switch:hover {
+    background-color: rgba(255,255,255,1);
+  }
+
+  .slider {
+    width: 50px;
+    height: 25px;
+    background-color: #d5d0c0;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-left: 10px;
+  }
+
+  .slider .toggle-circle {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 19px;
+    width: 19px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  .theme-label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  body.dark-mode .theme-label {
+    color: #fff;
+  }
+
+  /* Rest of your CSS... */
+]]></css>
+
+<js><![CDATA[
+// Wait for everything to be fully loaded
+window.addEventListener('load', function() {
+  // Create a more visible toggle button
+  const toggleHTML = `
+    <div class="theme-switch" title="Toggle Dark Mode">
+      <span class="theme-label">Theme</span>
+      <input type="checkbox" id="darkToggle" style="display:none;">
+      <span class="slider">
+        <span class="toggle-circle" id="circle"></span>
+      </span>
+    </div>`;
+
+  // Insert at the beginning of body to ensure visibility
+  document.body.insertAdjacentHTML('afterbegin', toggleHTML);
+
+  const toggle = document.getElementById('darkToggle');
+  const circle = document.getElementById('circle');
+
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      document.body.classList.add('dark-mode');
+      if (toggle) toggle.checked = true;
+      if (circle) circle.style.transform = 'translateX(25px)';
+    } else {
+      document.body.classList.remove('dark-mode');
+      if (toggle) toggle.checked = false;
+      if (circle) circle.style.transform = 'translateX(0)';
+    }
+  }
+
+  // Check for saved preference or system preference
+  const savedTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+  applyTheme(savedTheme || (systemPrefersDark ? 'dark' : 'light'));
+
+  // Add click handler
+  const slider = document.querySelector('.slider');
+  if (slider) {
+    slider.addEventListener('click', () => {
+      const newTheme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
+      applyTheme(newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  }
+  
+  console.log('Theme toggle initialized'); // Check console to verify script runs
+});
+]]></js>
+
+  </configuration>
+</extentreports>

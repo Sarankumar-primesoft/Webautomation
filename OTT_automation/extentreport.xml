@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+
+    <!-- Theme settings -->
+    <theme>STANDARD</theme>
+    <encoding>UTF-8</encoding>
+    <protocol>HTTPS</protocol>
+    <timelineEnabled>true</timelineEnabled>
+    <enableOfflineMode>false</enableOfflineMode>
+    <thumbnailForBase64>false</thumbnailForBase64>
+
+    <!-- Report Title & Name -->
+    <documentTitle>OTT Testing Report</documentTitle>
+    <reportName>OTT Test Automation Report</reportName>
+
+    <!-- Timestamp format -->
+    <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+
+    <!-- System Info for Browser and OS -->
+    <systemInfo>
+      <info name="OS" value="${os.name}" />
+      <info name="Java Version" value="${java.version}" />
+      <info name="Browser" value="Chrome 120.0" />
+      <info name="Executed By" value="QA Team" />
+    </systemInfo>
+
+    <!-- Enable Screenshot Thumbnails -->
+    <thumbnailForBase64>false</thumbnailForBase64>
+
+    <!-- Custom Logo & Styling -->
+    <css>
+      <![CDATA[
+        .nav-logo {
+          content: url('file://D:/eclipse/OTT_automation/Logo/win-logo.png');
+          height: 50px;
+          width: auto;
+        }
+        /* Center the report title */
+        .report-name {
+          text-align: center;
+          display: block;
+          width: 100%;
+          font-size: 24px;
+          font-weight: bold;
+        }
+        /* Make the test names more prominent */
+        .test-name {
+          font-weight: bold;
+          color: #007bff;
+        }
+        /* Customize the status colors */
+        .status-pass {
+          background-color: #28a745 !important;
+          color: white !important;
+        }
+        .status-fail {
+          background-color: #dc3545 !important;
+          color: white !important;
+        }
+      ]]>
+    </css>
+
+  </configuration>
+</extentreports>

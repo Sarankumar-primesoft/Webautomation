@@ -1,0 +1,17 @@
+D:\eclipse\OTT_automation\src\test\java\base\BaseClass.java
+D:\eclipse\OTT_automation\src\test\java\com\configure\config.java
+D:\eclipse\OTT_automation\src\test\java\com\configure\Factory.java
+D:\eclipse\OTT_automation\src\test\java\com\ExtentReport\Extentlogger.java
+D:\eclipse\OTT_automation\src\test\java\com\ExtentReport\ExtentManager.java
+D:\eclipse\OTT_automation\src\test\java\com\ExtentReport\ExtentReport.java
+D:\eclipse\OTT_automation\src\test\java\com\listeners\AnnotationListerners.java
+D:\eclipse\OTT_automation\src\test\java\com\listeners\Retryfailedtc.java
+D:\eclipse\OTT_automation\src\test\java\com\listeners\Testinfo.java
+D:\eclipse\OTT_automation\src\test\java\com\pom\Loginpage.java
+D:\eclipse\OTT_automation\src\test\java\com\pom\Profilepage.java
+D:\eclipse\OTT_automation\src\test\java\com\pom\Subscriptionpage.java
+D:\eclipse\OTT_automation\src\test\java\com\pom\VideoPlaybackPage.java
+D:\eclipse\OTT_automation\src\test\java\com\tests\TC_1.java
+D:\eclipse\OTT_automation\src\test\java\com\tests\TC_2.java
+D:\eclipse\OTT_automation\src\test\java\com\tests\TC_3.java
+D:\eclipse\OTT_automation\src\test\java\videoplayback_cases\TC_Playback.java

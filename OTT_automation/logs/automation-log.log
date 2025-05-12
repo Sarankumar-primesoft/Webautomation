@@ -1,0 +1,150 @@
+2025-05-12 15:57:54 INFO  BaseClass:85 - Starting Webautomation Test
+2025-05-12 15:57:55 INFO  BaseClass:85 - Starting Webautomation Test
+2025-05-12 15:57:57 INFO  BaseClass:394 - Page load timeout.
+2025-05-12 15:58:01 INFO  BaseClass:363 - Successfully launched "https://www.etvwin.com/home"
+2025-05-12 15:58:01 INFO  Loginpage:17 - Starting Login Test
+2025-05-12 15:58:01 INFO  Loginpage:264 - Login is Clicked
+2025-05-12 15:58:01 INFO  Loginpage:264 - Email is Clicked
+2025-05-12 15:58:02 INFO  Loginpage:322 - sarankumar2002vrp@gmail.com is entered in Email ID successfully
+2025-05-12 15:58:02 INFO  Loginpage:322 - Test@2024 is entered in Password successfully
+2025-05-12 15:58:02 INFO  Loginpage:264 - Next is Clicked
+2025-05-12 15:58:13 INFO  Loginpage:381 - Element is Visibile: Profile img
+2025-05-12 15:58:13 INFO  Loginpage:281 - Profileselect is Clicked
+2025-05-12 15:58:13 INFO  Profilepage:21 - Profile page test
+2025-05-12 15:58:13 INFO  Profilepage:351 - Click Action is performed on Profile navigation
+2025-05-12 15:58:14 INFO  Profilepage:264 -  My Profile is Clicked
+2025-05-12 15:58:14 INFO  Profilepage:381 - Element is Visibile: Profile name
+2025-05-12 15:58:14 INFO  Profilepage:221 - Assertion Validation on Element profilename: Expected='sarankumar', Actual='sarankumar'
+2025-05-12 15:58:14 INFO  Profilepage:221 - Assertion Validation on Element profileemail: Expected='sarankumar2002vrp@gmail.com', Actual='sarankumar2002vrp@gmail.com'
+2025-05-12 15:58:14 INFO  Profilepage:221 - Assertion Validation on Element profilemobile: Expected='918946072408', Actual='918946072408'
+2025-05-12 15:58:14 INFO  Profilepage:381 - Element is Visibile: Profile dob
+2025-05-12 15:58:14 INFO  Profilepage:221 - Assertion Validation on Element profiledob: Expected='20/09/2022', Actual='20/09/2022'
+2025-05-12 15:58:14 INFO  Profilepage:381 - Element is Visibile: Profile gender
+2025-05-12 15:58:14 INFO  Profilepage:221 - Assertion Validation on Element profilegender: Expected='Male', Actual='Male'
+2025-05-12 15:58:14 INFO  HomepageHeaders:18 - Homepage Headers test
+2025-05-12 15:58:14 INFO  HomepageHeaders:236 - Assertion Validation on Element Header logo: Header logo should be visible
+2025-05-12 15:58:15 INFO  HomepageHeaders:264 - HOME is Clicked
+2025-05-12 15:58:15 INFO  HomepageHeaders:221 - Assertion Validation on Element Homepage url: Expected='https://www.etvwin.com/home', Actual='https://www.etvwin.com/home'
+2025-05-12 15:58:15 INFO  HomepageHeaders:264 - TV SHOWS is Clicked
+2025-05-12 15:58:15 INFO  HomepageHeaders:221 - Assertion Validation on Element TV shows url: Expected='https://www.etvwin.com/tv-shows', Actual='https://www.etvwin.com/tv-shows'
+2025-05-12 15:58:16 INFO  HomepageHeaders:264 - MOVIES is Clicked
+2025-05-12 15:58:16 INFO  HomepageHeaders:221 - Assertion Validation on Element Movies url: Expected='https://www.etvwin.com/telugu-movies', Actual='https://www.etvwin.com/telugu-movies'
+2025-05-12 15:58:16 INFO  HomepageHeaders:264 - WATCH FREE is Clicked
+2025-05-12 15:58:16 INFO  HomepageHeaders:221 - Assertion Validation on Element Watchfree url: Expected='https://www.etvwin.com/free', Actual='https://www.etvwin.com/free'
+2025-05-12 15:58:17 INFO  HomepageHeaders:264 - LIVE TV is Clicked
+2025-05-12 15:58:17 INFO  HomepageHeaders:221 - Assertion Validation on Element Livetv url: Expected='https://www.etvwin.com/live', Actual='https://www.etvwin.com/live'
+2025-05-12 15:58:18 INFO  HomepageHeaders:264 - KIDS is Clicked
+2025-05-12 15:58:18 INFO  HomepageHeaders:221 - Assertion Validation on Element kids url: Expected='https://www.etvwin.com/kids', Actual='https://www.etvwin.com/kids'
+2025-05-12 15:58:18 INFO  Searchpage:19 - Search page test
+2025-05-12 15:58:18 INFO  Searchpage:351 - Click Action is performed on Search icon
+2025-05-12 15:58:18 INFO  Searchpage:322 - movies1090 is entered in Search for Shows, Serials, Episodes, Movies, Recipes and Videos successfully
+2025-05-12 15:58:18 INFO  WatchLaterPage:20 - Watchlate page test
+2025-05-12 15:58:20 ERROR WatchLaterPage:286 - Failed to click element: Home element click intercepted: Element <a activeclassname="active-link" class="nav-link" href="/home" style="text-transform: uppercase;">...</a> is not clickable at point (157, 32). Other element would receive the click: <input placeholder="Search for Shows, Serials, Episodes, Movies, Recipes and Videos" autocomplete="off" type="text" id="searchQuery" class="form-control" value="movies1090" data-gtm-form-interact-field-id="2">
+  (Session info: chrome=136.0.7103.93)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8501e66e4891a39964f67fa6fecc2b44, clickElement {id=f.D6F2A5C836D24F32D5EBF34A4E258BB6.d.805BB1BC3C3A457DD44FB4E09358EDE1.e.44}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49948}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49948/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8501e66e4891a39964f67fa6fecc2b44)] -> xpath: //a[text()='Home']]
+Session ID: 8501e66e4891a39964f67fa6fecc2b44
+2025-05-12 15:58:32 ERROR WatchLaterPage:286 - Failed to click element: First thumbnail Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (8501e66e4891a39964f67fa6fecc2b44)] -> xpath: //div[@class='logo-slider-inner']/div/img[@id='0']] (tried for 10 second(s) with 500 milliseconds interval)
+2025-05-12 15:58:33 INFO  WatchLaterPage:281 - Add to wishlist is Clicked
+2025-05-12 15:58:33 INFO  WatchLaterPage:381 - Element is Visibile: Added alert
+2025-05-12 15:58:33 INFO  WatchLaterPage:221 - Assertion Validation on Element Added alert Assertion: Expected='Added to my list', Actual='Added to my list'
+2025-05-12 15:58:34 INFO  WatchLaterPage:281 - watch btn is Clicked
+2025-05-12 15:58:34 INFO  WatchLaterPage:387 - Added to Watch now alert Element is now invisibile
+2025-05-12 15:58:49 INFO  WatchLaterPage:281 - Profilenavigate is Clicked
+2025-05-12 15:58:50 INFO  WatchLaterPage:281 -  My List is Clicked
+2025-05-12 15:58:50 INFO  WatchLaterPage:381 - Element is Visibile: My list bannerimg
+2025-05-12 15:58:51 INFO  WatchLaterPage:281 - My list bannerimg is Clicked
+2025-05-12 15:58:51 INFO  WatchLaterPage:221 - Assertion Validation on Element My list updated with the respective content: Expected='Akkada Ammayi Ikkada Abbayi', Actual='Akkada Ammayi Ikkada Abbayi'
+2025-05-12 15:58:51 INFO  WatchLaterPage:381 - Element is Visibile: Watchlater header
+2025-05-12 15:58:51 INFO  WatchLaterPage:236 - Assertion Validation on Element Watchlater first item: Asserting on watchlater first item
+2025-05-12 15:58:51 INFO  WatchLaterPage:381 - Element is Visibile: deletefirsTumb
+2025-05-12 15:58:52 INFO  WatchLaterPage:281 - Delete is Clicked
+2025-05-12 15:58:52 INFO  WatchLaterPage:281 - deletefirstumbsel is Clicked
+2025-05-12 15:58:52 INFO  WatchLaterPage:281 - Delete is Clicked
+2025-05-12 15:58:52 INFO  WatchLaterPage:381 - Element is Visibile: Confirm msg
+2025-05-12 15:58:53 INFO  WatchLaterPage:281 - YES is Clicked
+2025-05-12 15:58:53 INFO  HomepageCarousels:20 - Homepage carousels test
+2025-05-12 15:58:53 INFO  HomepageCarousels:281 - HOME is Clicked
+2025-05-12 15:58:53 INFO  HomepageCarousels:175 - Element is Visibile, Scrolled to Before tv
+2025-05-12 15:59:04 INFO  TransactionsPage:22 - Transaction page test
+2025-05-12 15:59:04 INFO  TransactionsPage:351 - Click Action is performed on Profile navigation
+2025-05-12 15:59:04 INFO  TransactionsPage:281 -  My Transactions is Clicked
+2025-05-12 15:59:04 INFO  TransactionsPage:306 - My Transactions is Display: true
+2025-05-12 15:59:14 INFO  TransactionsPage:306 - Mar 7, 2023 is Display: true
+2025-05-12 15:59:15 INFO  TransactionsPage:306 - Premium Plan Month is Display: true
+2025-05-12 15:59:15 INFO  TransactionsPage:306 - Mar 7, 2023 to Apr 6, 2023 is Display: true
+2025-05-12 15:59:15 INFO  TransactionsPage:306 - Expired is Display: true
+2025-05-12 15:59:15 INFO  TransactionsPage:306 - ₹6.6 is Display: true
+2025-05-12 15:59:15 INFO  TransactionsPage:306 - Mar 6, 2023 is Display: true
+2025-05-12 15:59:15 INFO  TransactionsPage:306 - Premium Plan Month is Display: true
+2025-05-12 15:59:15 INFO  TransactionsPage:306 - Mar 6, 2023 to Mar 7, 2023 is Display: true
+2025-05-12 15:59:15 INFO  TransactionsPage:306 - Expired is Display: true
+2025-05-12 15:59:16 INFO  TransactionsPage:306 - ₹99 is Display: true
+2025-05-12 15:59:16 INFO  TransactionsPage:281 - bill download is Clicked
+2025-05-12 15:59:16 INFO  TransactionsPage:306 - Mar 7, 2023 is Display: true
+2025-05-12 15:59:16 INFO  TransactionsPage:306 - Premium Plan Month is Display: true
+2025-05-12 15:59:16 INFO  TransactionsPage:306 - Mar 7, 2023 to Apr 6, 2023 is Display: true
+2025-05-12 15:59:16 INFO  TransactionsPage:306 - Expired is Display: true
+2025-05-12 15:59:17 INFO  TransactionsPage:306 - ₹6.6 is Display: true
+2025-05-12 15:59:17 INFO  TransactionsPage:306 - Mar 6, 2023 is Display: true
+2025-05-12 15:59:17 INFO  TransactionsPage:306 - Premium Plan Month is Display: true
+2025-05-12 15:59:17 INFO  TransactionsPage:306 - Mar 6, 2023 to Mar 7, 2023 is Display: true
+2025-05-12 15:59:17 INFO  TransactionsPage:306 - Expired is Display: true
+2025-05-12 15:59:17 INFO  TransactionsPage:306 - ₹99 is Display: true
+2025-05-12 15:59:17 INFO  TransactionsPage:281 - bill download is Clicked
+2025-05-12 15:59:18 INFO  ActivatetvPage:19 - Activate tv page test
+2025-05-12 15:59:18 INFO  ActivatetvPage:351 - Click Action is performed on Profile navigation
+2025-05-12 15:59:18 INFO  ActivatetvPage:281 -  Activate TV is Clicked
+2025-05-12 15:59:18 INFO  ActivatetvPage:306 - Activate ETV WIN on your TV is Display: true
+2025-05-12 15:59:19 INFO  ActivatetvPage:281 - Activate is Clicked
+2025-05-12 15:59:19 INFO  ActivatetvPage:306 - Please enter code is Display: true
+2025-05-12 15:59:20 INFO  ActivatetvPage:281 - Activate is Clicked
+2025-05-12 15:59:21 INFO  ActivatetvPage:306 - Code has expired. Please enter new code is Display: true
+2025-05-12 15:59:21 INFO  Footersection:20 - Footer section page test
+2025-05-12 15:59:21 INFO  Footersection:281 - About Us is Clicked
+2025-05-12 15:59:21 INFO  Footersection:306 - About Us is Display: true
+2025-05-12 15:59:22 INFO  Footersection:281 - Contact Us is Clicked
+2025-05-12 15:59:22 INFO  Footersection:306 - Contact Us is Display: true
+2025-05-12 15:59:22 INFO  Footersection:281 - Redeem is Clicked
+2025-05-12 15:59:22 INFO  Footersection:306 - Redeem your Promo Code is Display: true
+2025-05-12 15:59:23 INFO  Footersection:281 - Privacy Policy is Clicked
+2025-05-12 15:59:23 INFO  Footersection:306 - Privacy Policy is Display: true
+2025-05-12 15:59:23 INFO  Footersection:281 - Terms and Conditions is Clicked
+2025-05-12 15:59:24 INFO  Footersection:306 - Terms and Conditions is Display: true
+2025-05-12 15:59:24 INFO  Footersection:281 - FAQ is Clicked
+2025-05-12 15:59:24 INFO  Footersection:306 - Frequently Asked Questions is Display: true
+2025-05-12 15:59:25 INFO  Footersection:281 - Feedback is Clicked
+2025-05-12 15:59:25 INFO  Footersection:306 - Feedback is Display: true
+2025-05-12 15:59:25 INFO  Footersection:281 - Subscription is Clicked
+2025-05-12 15:59:25 INFO  Footersection:306 - Subscription is Display: true
+2025-05-12 15:59:26 INFO  Addprofile:19 - AddProfile page test
+2025-05-12 15:59:26 INFO  Addprofile:351 - Click Action is performed on Profile navigation
+2025-05-12 15:59:26 INFO  Addprofile:281 -  Manage Profile is Clicked
+2025-05-12 15:59:27 INFO  Addprofile:281 - + is Clicked
+2025-05-12 15:59:27 INFO  Addprofile:322 - testingprofile is entered in Enter the new name successfully
+2025-05-12 15:59:27 INFO  Addprofile:281 - Create is Clicked
+2025-05-12 15:59:28 INFO  Addprofile:381 - Element is Visibile: Created alert
+2025-05-12 15:59:28 INFO  Addprofile:221 - Assertion Validation on Element Created alert: Expected='Profile created successfully!', Actual='Profile created successfully!'
+2025-05-12 15:59:28 INFO  Addprofile:387 - Invisibility of created alert Element is now invisibile
+2025-05-12 15:59:44 INFO  Addprofile:351 - Click Action is performed on Profile navigation
+2025-05-12 15:59:44 INFO  Addprofile:281 - Switch Profile is Clicked
+2025-05-12 15:59:44 INFO  Addprofile:281 - switch to created profile is Clicked
+2025-05-12 15:59:45 INFO  Addprofile:281 - HOME is Clicked
+2025-05-12 15:59:45 INFO  Addprofile:351 - Click Action is performed on Profile navigation
+2025-05-12 15:59:45 INFO  Addprofile:281 -  Manage Profile is Clicked
+2025-05-12 15:59:46 INFO  Addprofile:281 - Created profile is Clicked
+2025-05-12 15:59:46 INFO  Addprofile:281 - Delete Profile is Clicked
+2025-05-12 15:59:46 INFO  Addprofile:281 - Ok is Clicked
+2025-05-12 15:59:47 INFO  Addprofile:281 - Switch to Main profile is Clicked
+2025-05-12 15:59:47 INFO  Addprofile:281 - Delete Profile is Clicked
+2025-05-12 15:59:47 INFO  Addprofile:281 - Ok is Clicked
+2025-05-12 15:59:48 INFO  Addprofile:281 - Done is Clicked
+2025-05-12 15:59:48 INFO  Addprofile:281 - Switch to default is Clicked
+2025-05-12 15:59:48 INFO  Addprofile:351 - Click Action is performed on Profile navigation
+2025-05-12 15:59:49 INFO  Addprofile:351 - Click Action is performed on Log out
+2025-05-12 15:59:49 INFO  Addprofile:351 - Click Action is performed on Confirm logout
+2025-05-12 15:59:54 INFO  Addprofile:221 - Assertion Validation on Element Logout Alert: Expected='User Signed Out Successfully', Actual='User Signed Out Successfully'

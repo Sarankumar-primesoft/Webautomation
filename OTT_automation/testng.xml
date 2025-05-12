@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>	
+		<listener class-name="com.listeners.Testinfo"></listener>
+		<listener class-name="com.listeners.AnnotationListerners"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.tests.TC_1" />
+			<class name="com.tests.TC_2" />
+	<!--		<class name="com.tests.TC_3" />-->
+			<class name="com.tests.TC_4" />
+			<class name="com.tests.TC_5" /> 
+			<class name="com.tests.TC_6" />
+			<class name="com.tests.TC_7" />
+			<class name="com.tests.TC_8" />	
+			<class name="com.tests.TC_9" /> 
+			<class name="com.tests.TC_10"/>  
+			<class name="com.tests.TC_11"/>
+		<!--	<class name="videoplayback_cases.TC_Playback" />-->
+		</classes>
+	</test>
+</suite> 

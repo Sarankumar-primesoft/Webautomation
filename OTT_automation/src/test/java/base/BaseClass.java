@@ -153,7 +153,7 @@ public class BaseClass {
 
 	}
 
-	@AfterSuite
+//	@AfterSuite
 //	public void tearDown() throws Exception {
 //		if (driver != null) {
 //			loginPage.logout();

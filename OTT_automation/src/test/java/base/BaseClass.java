@@ -154,17 +154,17 @@ public class BaseClass {
 	}
 
 	@AfterSuite
-	public void tearDown() throws Exception {
-		if (driver != null) {
-			loginPage.logout();
-			Browserinfo();
-			if (driver != null) {
-			    driver.quit();
-			}
-			System.out.println("WebDriver closed.");
-//			ExtentReport.flushreport();  
-		}
-	}
+//	public void tearDown() throws Exception {
+//		if (driver != null) {
+//			loginPage.logout();
+//			Browserinfo();
+//			if (loginPage  != null) {
+//			    driver.quit();
+//			}
+//			System.out.println("WebDriver closed.");
+////			ExtentReport.flushreport();  
+//		}
+//	}
 	
 	public void scrollUntilElementAppears(WebElement ele,String whichele) throws InterruptedException {
 	    int maxAttempts = 20; // Limit attempts to avoid infinite loops

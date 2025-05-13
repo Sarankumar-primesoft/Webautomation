@@ -20,7 +20,7 @@ public class TC_5 extends BaseClass{
 		
 		JSClick(driver, searchpage.searchicon, "Search icon");
 		sendkeys(searchpage.searchbar, searchpage.invalidsearch());
-		
+		entersendkeys(searchpage.searchbar);
 		assertTrue(isdisplay(searchpage.nodatamsg), "Alert Msg","No data msg validation");
 		
 		assertTrue(isdisplay(searchpage.clearicon),"clear  icon","Clear icon visible validation");

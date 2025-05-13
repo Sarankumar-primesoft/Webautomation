@@ -329,6 +329,10 @@ public class BaseClass {
 			logger.info(value + " is entered successfully", false);
 		}
 	}
+	public static void entersendkeys(WebElement element) 
+	{
+		element.sendKeys(Keys.ENTER);
+	}
 	
 	private static String Getattribute(WebElement element,String attributename) {
 		return element.getAttribute(attributename);

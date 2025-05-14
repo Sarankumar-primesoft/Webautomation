@@ -1,6 +1,7 @@
 package com.ExtentReport;
 
 import java.awt.Desktop;
+import java.awt.GraphicsEnvironment;
 import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
@@ -54,7 +55,9 @@ public class ExtentReport {
 				 File reportFile = new File(Factory.getExtentReportFilePath());
 		            if (reportFile.exists()) {
 		            	ExtentManager.getExtentTest().info("Opening the Extent Report: " + reportFile);
+		            	if (!GraphicsEnvironment.isHeadless()) {
 		            	Desktop.getDesktop().browse(reportFile.toURI());
+		            	}
 		            } else {
 		            	ExtentManager.getExtentTest().fail("Extent Report file not found: " + reportFile);
 		                System.out.println("Extent Report file does not exist: " + reportFile);

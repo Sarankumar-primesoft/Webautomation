@@ -158,9 +158,9 @@ public class BaseClass {
 		if (driver != null) {
 //			loginPage.logout();
 			Browserinfo();
-//			if (loginPage  != null) {
-//			    driver.quit();
-//			}
+			if (loginPage  != null) {
+			    driver.quit();
+			}
 			System.out.println("WebDriver closed.");
 			ExtentReport.flushreport();  
 		}

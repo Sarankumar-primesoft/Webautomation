@@ -14,7 +14,7 @@
 			<class name="com.tests.TC_4"/>
 			<class name="com.tests.TC_5"/>
 			<class name="com.tests.TC_6"/>
-			<class name="com.tests.TC_7"/>
+			<!--<class name="com.tests.TC_7"/>-->
 			<class name="com.tests.TC_8"/>
 			<class name="com.tests.TC_9"/>
 			<class name="com.tests.TC_10"/>

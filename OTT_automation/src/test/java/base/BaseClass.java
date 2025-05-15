@@ -100,7 +100,6 @@ public class BaseClass {
 		Softassert = new SoftAssert();
 	
 		loadProperties();
-
 		WebDriverManager.chromedriver().setup();
 		WebDriverManager.firefoxdriver().setup();
 		WebDriverManager.edgedriver().setup();
@@ -137,7 +136,9 @@ public class BaseClass {
 		    "profile.default_content_settings.popups", 0,
 		    "profile.content_settings.exceptions.automatic_downloads.*.setting", 1
 		));
-
+		options.addArguments("--headless=new"); // or just "--headless" for older versions
+		options.addArguments("--window-size=1920,1080"); // IMPORTANT!
+		options.addArguments("--disable-gpu"); // Optional but recommended
 		
 		System.out.println("driver : "+ driver );		
 

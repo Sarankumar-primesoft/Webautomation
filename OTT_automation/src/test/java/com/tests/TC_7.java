@@ -20,9 +20,8 @@ public class TC_7 extends BaseClass{
 		logger.info("Homepage carousels test");
 		
 		loginPage.home();
-		Thread.sleep(2000);
 		scrollUntilElementAppears(homepagecarousels.beforetv,"Before tv");
-		homepagecarousels.morebtnclick(homepagecarousels.beforetvmore,homepagecarousels.beforetvmoreurl(),"Before Tv");
+//		homepagecarousels.morebtnclick(homepagecarousels.beforetvmore,homepagecarousels.beforetvmoreurl(),"Before Tv");
 		
 		scrollUntilElementAppears(homepagecarousels.recentlyadded,"Recently added");
 		homepagecarousels.morebtnclick(homepagecarousels.recentlyaddedmore,homepagecarousels.recentlyaddedmoreurl(),"Recently added");

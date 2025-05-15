@@ -18,6 +18,8 @@ public class HomepageCarousels extends BaseClass {
 	public HomepageCarousels(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
+	@FindBy(xpath = "//a[text()='Home']")
+	public WebElement  home; 
 	
 	@FindBy(xpath = "//div[@class='heading-font-size']/h2[text()='Before TV']")
 	public WebElement  beforetv; 

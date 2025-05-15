@@ -19,7 +19,7 @@ public class TC_7 extends BaseClass{
 		logger = LogManager.getLogger(HomepageCarousels.class);
 		logger.info("Homepage carousels test");
 		
-		loginPage.home();
+		clickelementwithname(homepagecarousels.home, "Home");
 		scrollUntilElementAppears(homepagecarousels.beforetv,"Before tv");
 //		homepagecarousels.morebtnclick(homepagecarousels.beforetvmore,homepagecarousels.beforetvmoreurl(),"Before Tv");
 		

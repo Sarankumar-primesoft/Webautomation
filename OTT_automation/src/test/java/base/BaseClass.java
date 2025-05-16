@@ -169,7 +169,7 @@ public class BaseClass {
 	
 	public void scrollUntilElementAppears(WebElement ele,String whichele) throws InterruptedException {
 	    int maxAttempts = 20; // Limit attempts to avoid infinite loops
-	    int attempts = 0;
+	    int attempts = 1;
 	    
 	    while (attempts < maxAttempts) {
 	        try {

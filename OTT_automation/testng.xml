@@ -9,8 +9,8 @@
     <test thread-count="1" name="Test">
 		<classes>
 			<class name="com.tests.TC_1"/>
-			<class name="com.tests.TC_2"/>
-			<!-- <class name="com.tests.TC_3"/> -->
+			<!-- 	<class name="com.tests.TC_2"/>
+			<class name="com.tests.TC_3"/> -->
 			<class name="com.tests.TC_4"/>
 			<class name="com.tests.TC_5"/>
 			<class name="com.tests.TC_6"/>

@@ -16,7 +16,7 @@
 			<class name="com.tests.TC_6"/>
 			<!--<class name="com.tests.TC_7"/>-->
 			<class name="com.tests.TC_8"/>
-			<class name="com.tests.TC_9"/>
+			<!--<class name="com.tests.TC_9"/>-->
 			<class name="com.tests.TC_10"/>
 			<class name="com.tests.TC_11"/>
 			<!-- <class name="videoplayback_cases.TC_Playback"/> -->

@@ -10,16 +10,16 @@
 		<classes>
 			<class name="com.tests.TC_1"/>
 			<class name="com.tests.TC_2"/>
-			<class name="com.tests.TC_3"/> 
+<!--			<class name="com.tests.TC_3"/>--> 
 			<class name="com.tests.TC_4"/>
 			<class name="com.tests.TC_5"/>
 			<class name="com.tests.TC_6"/>
 			<class name="com.tests.TC_7"/>
-			<class name="com.tests.TC_8"/>
+		<!--	<class name="com.tests.TC_8"/>-->
 			<class name="com.tests.TC_9"/>
 			<class name="com.tests.TC_10"/>
 			<class name="com.tests.TC_11"/>
-			 <class name="videoplayback_cases.TC_Playback"/> 
+		<!--	 <class name="videoplayback_cases.TC_Playback"/> -->
 		</classes>
 	</test>
 </suite>

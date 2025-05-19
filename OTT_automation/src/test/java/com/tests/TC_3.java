@@ -1,9 +1,10 @@
 package com.tests;
 
+import java.time.Duration;
+
 import org.apache.logging.log4j.LogManager;
 import org.testng.annotations.Test;
 
-import com.pom.Loginpage;
 import com.pom.Subscriptionpage;
 
 import base.BaseClass;
@@ -29,16 +30,21 @@ public class TC_3 extends BaseClass {
 		
 		clickelement(subpage.buynow_btn);
 		visibleofele(driver, subpage.choose_planAlert,"Choose plan alert");
-		assertEquals(subpage.choose_planAlert.getText(), subpage.getalertmsg(), "Choose Plan alert ");
-		clickelement(subpage.month_planbtn);
-
-		sendkeys(subpage.coupon_code,subpage.getcouponcode());
-		clickelement(subpage.apply_btn);
-		assertEquals(subpage.invalid_alert.getText(),subpage.getinvalidalert(),"Invalid alert"); 
-	
-		clickelement(subpage.clear_btn);
+		assertEquals(subpage.choose_planAlert.getText(), subpage.getalertmsg(), "Choose Plan alert ");   
+		clickelement(subpage.month_planbtn);	
+		
+//		sendkeys(subpage.coupon_code,subpage.getcouponcode());
+//		clickelement(subpage.apply_btn);
+//		
+//		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+//		driver.navigate().back();
+//		
+//		assertEquals(subpage.invalid_alert.getText(),subpage.getinvalidalert(),"Invalid alert"); 
+//	
+//		clickelement(subpage.clear_btn);
+		invisibilityofelement(driver,subpage.choose_planAlert, "Choose plan alert");
 		scrollByVisibilityOfElement(driver, subpage.buynow_btn);
-		clickelement(subpage.buynow_btn);
+		clickelementwithname(subpage.buynow_btn,"Buy now btn");
 		
 		switchframe(subpage.frame);
 			

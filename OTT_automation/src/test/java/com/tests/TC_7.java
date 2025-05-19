@@ -22,9 +22,10 @@ public class TC_7 extends BaseClass{
 		clickelementwithname(homepagecarousels.home, "Home");
 		scrollUntilElementAppears(homepagecarousels.beforetv,"Before tv");
 //		homepagecarousels.morebtnclick(homepagecarousels.beforetvmore,homepagecarousels.beforetvmoreurl(),"Before Tv");
+		scrollToBottom(driver);
 		
-		visibleofele(driver, homepagecarousels.recentlyadded, "recently added header");
 		scrollUntilElementAppears(homepagecarousels.recentlyadded,"Recently added");
+		visibleofele(driver, homepagecarousels.recentlyadded, "recently added header");
 		homepagecarousels.morebtnclick(homepagecarousels.recentlyaddedmore,homepagecarousels.recentlyaddedmoreurl(),"Recently added");
 		
 		scrollUntilElementAppears(homepagecarousels.trendingnow,"Trending now");

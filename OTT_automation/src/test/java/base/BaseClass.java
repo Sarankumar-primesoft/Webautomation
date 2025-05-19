@@ -206,6 +206,10 @@ public class BaseClass {
 	    logger.info("Scrolled down the page generically for " + maxScrolls + " steps.");
 	}
 
+	public static void scrollToBottom(WebDriver driver) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
 
 	public static void navigateback() throws InterruptedException {
 		Thread.sleep(2000);

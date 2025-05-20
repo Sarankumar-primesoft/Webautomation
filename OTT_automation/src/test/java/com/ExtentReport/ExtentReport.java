@@ -55,7 +55,11 @@ public class ExtentReport {
 				 File reportFile = new File(Factory.getExtentReportFilePath());
 		            if (reportFile.exists()) {
 		            	ExtentManager.getExtentTest().info("Opening the Extent Report: " + reportFile);
-		            	Desktop.getDesktop().browse(reportFile.toURI());
+		            	 if (!GraphicsEnvironment.isHeadless()) {
+		                     Desktop.getDesktop().browse(reportFile.toURI());
+		                 } else {
+		                     System.out.println("Headless environment detected (like Jenkins). Skipping opening report.");
+		                 }
 		            } else {
 		            	ExtentManager.getExtentTest().fail("Extent Report file not found: " + reportFile);
 		                System.out.println("Extent Report file does not exist: " + reportFile);

@@ -75,7 +75,6 @@ public class Loginpage extends BaseClass{
 
 	public void login_case() throws InterruptedException
 	{
-		ExtentReport.createTest("Login");
 		Extentlogger.info("Starting login test");
 		clickelement(login_btn);
 		clickelement(email_btn);

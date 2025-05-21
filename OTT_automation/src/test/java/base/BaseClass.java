@@ -251,7 +251,7 @@ public class BaseClass {
 
 	public  void scrollByVisibilityOfElement(WebDriver driver, WebElement ele) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView();", ele);
+		js.executeScript("arguments[0].scrollIntoView(true);", ele);
 		Extentlogger.info("Scrolled to "+getElementName(ele));
 		logger.info("Scrolled to "+getElementName(ele));
 

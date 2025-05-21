@@ -28,10 +28,10 @@ public class TC_3 extends BaseClass {
 		
 		assertEquals(subpage.premium_year.getText(),subpage.getpremiumyear(),"Year Prenium" );
 		
-		clickelement(subpage.buynow_btn);
+		clickelementwithname(subpage.buynow_btn,"Buy now btn");
 		visibleofele(driver, subpage.choose_planAlert,"Choose plan alert");
 		assertEquals(subpage.choose_planAlert.getText(), subpage.getalertmsg(), "Choose Plan alert ");   
-		clickelement(subpage.month_planbtn);	
+		clickelementwithname(subpage.month_planbtn,"Month plan btn");	
 		
 //		sendkeys(subpage.coupon_code,subpage.getcouponcode());
 //		clickelement(subpage.apply_btn);
@@ -43,7 +43,13 @@ public class TC_3 extends BaseClass {
 //	
 //		clickelement(subpage.clear_btn);
 		invisibilityofelement(driver,subpage.choose_planAlert, "Choose plan alert");
-		scrollByVisibilityOfElement(driver, subpage.buynow_btn);
+	
+		try {
+			scrollByVisibilityOfElement(driver, subpage.buynow_btn);
+		}catch (Exception e) {
+			scrollToBottom(driver);
+		}
+		
 		clickelementwithname(subpage.buynow_btn,"Buy now btn");
 		
 		switchframe(subpage.frame);

@@ -20,7 +20,7 @@ public class TC_2 extends BaseClass{
 
 		logger.info("Profile page test");
 		
-		JSClick(driver,loginPage.profilenav,"Profile navigation");
+		clickelementwithname(loginPage.profilenav,"Profile navigation");
 		
 		clickelement(profilepage.myprofile);
 

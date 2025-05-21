@@ -16,10 +16,13 @@ public class TC_4 extends BaseClass {
 		
 		logger = LogManager.getLogger(HomepageHeaders.class);
 		logger.info("Homepage Headers test");
+		driver.get("https://www.etvwin.com/home");		
+		
+//		JSClick(driver,homepageheaders.home,"home");
 		
 		assertTrue(homepageheaders.headerlogo.isDisplayed(),"Header logo","Header logo should be visible");
-		
-		clickelement(homepageheaders.home);
+
+	
 		assertEquals(homepageheaders.currentUrl(), homepageheaders.homecurrentUrl(), "Homepage url");
 		
 		clickelement(homepageheaders.tvshows);

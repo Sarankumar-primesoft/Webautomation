@@ -159,7 +159,12 @@ public class BaseClass {
 	@BeforeMethod
 	public void home(Method method)
 	{
-		if (method.getName().equals("TC1_login") || method.getName().equals("TC9_Activatetv")|| method.getName().equals("TC10_Footersection") ) {
+		if (method.getName().equals("TC1_login") || method.getName().equals("TC9_Activatetv")|| method.getName().equals("TC10_Footersection")
+				|| method.getName().equals("TC12_videoplaynavi")|| method.getName().equals("TC13_validateplay")
+				|| method.getName().equals("TC14_validatepause") || method.getName().equals("TC15_validateforward") 
+				|| method.getName().equals("TC16_validaterewind") || method.getName().equals("TC17_validatefullscreen") 
+				|| method.getName().equals("TC18_ValidateMute") || method.getName().equals("TC19_validatespeedcontrols") ) 
+		{
             System.out.println("Skipping @BeforeMethod for: " + method.getName());
             return;
         }

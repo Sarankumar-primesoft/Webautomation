@@ -32,24 +32,12 @@ public class TC_3 extends BaseClass {
 		visibleofele(driver, subpage.choose_planAlert,"Choose plan alert");
 		assertEquals(subpage.choose_planAlert.getText(), subpage.getalertmsg(), "Choose Plan alert ");   
 		clickelementwithname(subpage.month_planbtn,"Month plan btn");	
-		
-//		sendkeys(subpage.coupon_code,subpage.getcouponcode());
-//		clickelement(subpage.apply_btn);
-//		
-//		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
-//		driver.navigate().back();
-//		
-//		assertEquals(subpage.invalid_alert.getText(),subpage.getinvalidalert(),"Invalid alert"); 
-//	
-//		clickelement(subpage.clear_btn);
+	
 		invisibilityofelement(driver,subpage.choose_planAlert, "Choose plan alert");
 	
-		try {
-			scrollByVisibilityOfElement(driver, subpage.buynow_btn);
-		}catch (Exception e) {
-			scrollToBottom(driver);
-		}
-		
+		scrollByVisibilityOfElement(driver, subpage.buynow_btn);
+		scrollToBottom(driver);
+				
 		clickelementwithname(subpage.buynow_btn,"Buy now btn");
 		
 		switchframe(subpage.frame);

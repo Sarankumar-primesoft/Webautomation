@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.List;
@@ -31,6 +32,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
 
@@ -154,6 +156,17 @@ public class BaseClass {
 
 	}
 
+	@BeforeMethod
+	public void home(Method method)
+	{
+		if (method.getName().equals("TC1_login") || method.getName().equals("TC9_Activatetv")|| method.getName().equals("TC10_Footersection") ) {
+            System.out.println("Skipping @BeforeMethod for: " + method.getName());
+            return;
+        }
+		System.out.println("Running @BeforeMethod for: " + method.getName());
+		driver.get("https://www.etvwin.com/home");
+	}
+	
 	@AfterSuite
 	public void tearDown() throws Exception {
 		if (driver != null) {

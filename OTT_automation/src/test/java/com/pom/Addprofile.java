@@ -19,6 +19,8 @@ public class Addprofile extends BaseClass{
 	
 	@FindBy(xpath = "(//a[@id='nav-dropdown']/../div/a)[2]")
 	public WebElement manageprofile;
+	@FindBy(xpath = "(//a[@id='nav-dropdown']/../div/a)[2]")
+	public WebElement manageprofile1;
 
 	@FindBy(xpath = "//div[text()='+']/..")
 	public WebElement addprofile;
@@ -35,8 +37,11 @@ public class Addprofile extends BaseClass{
 	@FindBy(xpath = "//p[contains(text(),'testingprofile')]/..//button")
 	public WebElement createdprofile; 
 	
-	@FindBy(xpath = "//p[contains(text(),'sarankumar')]/..//button")
-	public WebElement mainprofile; 
+	@FindBy(xpath = "//p[contains(text(),'secondary')]/..//button")
+	public WebElement secondaryprofile; 
+
+	@FindBy(xpath = "//p[contains(text(),'testing')]/..//button")
+	public WebElement testingprofile; 
 	
 	@FindBy(xpath = "//p[contains(text(),'testingprofile')]/..//button")
 	public WebElement delprofile; 
@@ -47,7 +52,7 @@ public class Addprofile extends BaseClass{
 	@FindBy(xpath = "//button[contains(text(),'Ok')]")
 	public WebElement confirmdel; 
 	
-	@FindBy(xpath = "//div[@role='alert']")
+	@FindBy(xpath = "//div[@role='alert']/div[2]")
 	public WebElement delalert; 
 	
 	@FindBy(xpath = "//p[contains(text(),'testingprofile')]/..//img")
@@ -62,7 +67,9 @@ public class Addprofile extends BaseClass{
 	@FindBy(xpath = "//button[contains(text(),'Done')]")
 	public WebElement donebtn; 
 	
-	@FindBy(xpath = "(//div[@class='profile-card '])[1]")
+//	@FindBy(xpath = "(//div[@class='profile-card '])[1]")
+//	public WebElement switchtodef; 
+	@FindBy(xpath = "(//div[@class='profile-card default-profile'])")
 	public WebElement switchtodef; 
 	
 	@FindBy(xpath = "//button[contains(text(),'Edit Profiles')]")
@@ -78,9 +85,9 @@ public class Addprofile extends BaseClass{
 	{
 		return prop.getProperty("cratedmsg");
 	}
-	public String createdprodel()
+	public String delmsg()
 	{
-		return prop.getProperty("createdprodel");
+		return prop.getProperty("delmsg");
 	}
 	public String admindelalert()
 	{

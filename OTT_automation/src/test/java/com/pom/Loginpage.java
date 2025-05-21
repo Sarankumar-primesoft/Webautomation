@@ -1,6 +1,5 @@
 package com.pom;
 
-import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,6 +41,9 @@ public class Loginpage extends BaseClass{
 	@FindBy(xpath="//a[@id='nav-dropdown']")
 	public  WebElement profilenav;
 	
+	@FindBy(xpath="//a[@id='nav-dropdown']")
+	public  WebElement profilenav1;
+	
 
 	@FindBy(xpath="//div[contains(text(),'Logout')]")
 	public WebElement logout;
@@ -73,7 +75,7 @@ public class Loginpage extends BaseClass{
 
 	public void login_case() throws InterruptedException
 	{
-//		ExtentReport.createTest("Login");
+		ExtentReport.createTest("Login");
 		Extentlogger.info("Starting login test");
 		clickelement(login_btn);
 		clickelement(email_btn);
@@ -110,7 +112,7 @@ public class Loginpage extends BaseClass{
 		String logoutalert = logout_alert.getText();
 		
 		assertEquals(logoutalert,prop.getProperty("logoutalert"),"Logout Alert");
-		
+		invisibilityofelement(driver,logout_alert,"logout alert");
 		}
 
 	public void home() {

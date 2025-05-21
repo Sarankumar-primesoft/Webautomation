@@ -4,7 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.testng.annotations.Test;
 
 import com.pom.Addprofile;
-import com.pom.Searchpage;
 
 import base.BaseClass;
 
@@ -36,27 +35,10 @@ public class TC_11 extends BaseClass{
 
 		JSClick(driver,loginPage.profilenav,"Profile navigation");		
 
-		clickelementwithname(addprofile.switchprofile,"switch profile");
-
-		clickelementwithname(addprofile.switchtocreatedprofile,"switch to created profile");
-
-		loginPage.home();
-		JSClick(driver,addprofile.profilenav,"Profile navigation");	
-
 		clickelementwithname(addprofile.manageprofile,"manage profile");
 		clickelementwithname(addprofile.createdprofile,"Created profile");
 		clickelementwithname(addprofile.delbtn,"delete btn");
 		clickelementwithname(addprofile.confirmdel,"Confirm del");
 		
-		//assertEquals(Gettext(addprofile.delalert), addprofile.createdprodel(), "Delete alert");
-
-		clickelementwithname(addprofile.mainprofile,"Switch to Main profile");
-		clickelementwithname(addprofile.delbtn,"Del btn");
-		clickelementwithname(addprofile.confirmdel,"Confirm del");
-
-
-		//assertEquals(Gettext(addprofile.delalert), addprofile.admindelalert(), "Admin Delete alert");
-		clickelementwithname(addprofile.donebtn,"Done btn");
-		clickelementwithname(addprofile.switchtodef,"Switch to default");
 	}
 }

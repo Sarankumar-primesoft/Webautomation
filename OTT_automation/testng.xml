@@ -19,7 +19,7 @@
 			<class name="com.tests.TC_9"/>
 			<class name="com.tests.TC_10"/>
 			<class name="com.tests.TC_11"/>
-			<!--<class name="videoplayback_cases.TC_Playback"/> -->
+			<class name="videoplayback_cases.TC_Playback"/> 
 		</classes>
 	</test>
 </suite>

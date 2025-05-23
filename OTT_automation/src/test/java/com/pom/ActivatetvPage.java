@@ -16,7 +16,10 @@ public class ActivatetvPage extends BaseClass{
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//a[@id='nav-dropdown']/../div/a[7]")
+	@FindBy(xpath="//a[@id='nav-dropdown']")
+	public  WebElement profilenav;
+		
+	@FindBy(xpath = "(//a[contains(., \"Activate TV\")])[3]")
 	public WebElement  Activatetvnavi; 
 	
 	@FindBy(xpath = "//h6[contains(.,'Activate ETV')]")

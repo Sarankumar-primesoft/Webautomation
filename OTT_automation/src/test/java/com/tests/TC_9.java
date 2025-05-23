@@ -18,7 +18,7 @@ public class TC_9 extends BaseClass{
 		logger = LogManager.getLogger(ActivatetvPage.class);
 		logger.info("Activate tv page test");
 		
-		clickelementwithname(activatetv.profilenav,"Profile navigation");
+		JSClick(driver,loginPage.profilenav,"Profile navigation");
 		
 		clickelementwithname(activatetv.Activatetvnavi, "Activate tv navigation");
 		

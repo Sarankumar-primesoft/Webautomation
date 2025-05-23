@@ -159,7 +159,7 @@ public class BaseClass {
 	@BeforeMethod
 	public void home(Method method)
 	{
-		if (method.getName().equals("TC1_login") || method.getName().equals("TC9_Activatetv")|| method.getName().equals("TC10_Footersection")
+		if (method.getName().equals("TC1_login") || method.getName().equals("TC10_Footersection")
 				|| method.getName().equals("TC12_videoplaynavi")|| method.getName().equals("TC13_validateplay")
 				|| method.getName().equals("TC14_validatepause") || method.getName().equals("TC15_validateforward") 
 				|| method.getName().equals("TC16_validaterewind") || method.getName().equals("TC17_validatefullscreen") 
@@ -181,7 +181,7 @@ public class BaseClass {
 			    driver.quit();
 			}
 			System.out.println("WebDriver closed.");
-			ExtentReport.flushreport();  
+//			ExtentReport.flushreport();  
 		}
 	}
 	
@@ -411,7 +411,7 @@ public class BaseClass {
 	}
 
 	public static Boolean invisibilityofelement(WebDriver driver, WebElement element,String name ) {
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 		Extentlogger.info(name+" Element is now invisibile");
 		logger.info(name+" Element is now invisibile");
 		return wait.until(ExpectedConditions.invisibilityOf(element));

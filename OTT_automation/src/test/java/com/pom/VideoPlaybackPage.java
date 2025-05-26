@@ -31,7 +31,7 @@ public class VideoPlaybackPage extends BaseClass{
 	@FindBy(xpath = "//h2[contains(.,'Web Series')]")
 	WebElement WebSeries;
 	
-	@FindBy(xpath = "(//div[@class='swiper-wrapper']/div//img)")
+	@FindBy(xpath = "//h2[text()='Shows']/preceding::div[@class='swiper-wrapper']//img")
 	List<WebElement> watchfreecontent;
 
 	@FindBy(xpath = "//img[@alt='Abhishekam']")
@@ -82,7 +82,7 @@ public class VideoPlaybackPage extends BaseClass{
 		clickelement(watchfreeheader);	
 		visibleofele(driver, Serials,"Serials");
 		randomwatchfreeselect(driver);
-		clickelement(watchnowbtn);
+		JSClick(driver,watchnowbtn,"watch now btn");
 		Thread.sleep(5000);
 	}
 	
@@ -357,7 +357,7 @@ public class VideoPlaybackPage extends BaseClass{
 	}
 	public void speedbtn()
 	{
-		clickelement(speed);
+		clickelementwithname(speed,"Speed");
 	}
 	public void speedbackbtn()
 	{

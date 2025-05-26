@@ -17,7 +17,7 @@ public class TC_11 extends BaseClass{
 		logger = LogManager.getLogger(Addprofile.class);
 		logger.info("AddProfile page test");
 
-		JSClick(driver,loginPage.profilenav,"Profile navigation");
+		clickelementwithname(addprofile.profilenav,"Profile navigation");
 
 		clickelementwithname(addprofile.manageprofile,"Manage profile");
 

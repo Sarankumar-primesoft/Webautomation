@@ -345,8 +345,7 @@ public class VideoPlaybackPage extends BaseClass{
 	}
 	public void rewind()
 	{
-		
-		JSClick(driver,rewind,"rewind");
+		clickelement(rewind);
 	}
 	public void fullscreen()
 	{

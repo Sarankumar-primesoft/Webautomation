@@ -247,7 +247,7 @@ public class VideoPlaybackPage extends BaseClass{
 		speedcontrolsvalidate(durationplayed, selectedspeed);
 	}
 
-	public void waitForAdsToFinish(WebDriver driver) {
+	public void waitForAdsToFinish(WebDriver driver) throws InterruptedException {
 	    try {
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
@@ -295,6 +295,7 @@ public class VideoPlaybackPage extends BaseClass{
 
 	    } catch (Exception e) {
 	        System.out.println("⚠️ No more ads detected");
+	        Thread.sleep(10000);
 	    }
 	}
 
@@ -321,10 +322,6 @@ public class VideoPlaybackPage extends BaseClass{
 	    }
 	    return 0; // Default to 0 if no match is found
 	}
-
-
-
-	
 	
 	public void playbtn()
 	{
@@ -367,7 +364,7 @@ public class VideoPlaybackPage extends BaseClass{
 	{
 		clickelement(settingbtn);
 	}
-	public void countads(WebDriver driver)
+	public void countads(WebDriver driver) throws InterruptedException
 	{
 //		waitForAdsToFinish(driver, adtimer,skipbtn);
 		waitForAdsToFinish(driver);

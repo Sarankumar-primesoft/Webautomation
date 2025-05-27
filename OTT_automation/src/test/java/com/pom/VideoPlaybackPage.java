@@ -345,7 +345,7 @@ public class VideoPlaybackPage extends BaseClass{
 	}
 	public void rewind()
 	{
-		clickelementwithname(rewind,"rewind");
+		clickelement(rewind);
 	}
 	public void fullscreen()
 	{

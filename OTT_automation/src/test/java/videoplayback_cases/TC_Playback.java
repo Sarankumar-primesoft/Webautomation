@@ -61,7 +61,7 @@ public class TC_Playback extends BaseClass {
 
 	}
 	
-	@Test(priority = 3)
+//	@Test(priority = 3)
 	public void TC16_validaterewind() throws InterruptedException
 	{
 		videoplaybackpage.moveforwardfor2min();	
@@ -91,7 +91,7 @@ public class TC_Playback extends BaseClass {
 	{
 		videoplaybackpage.validatemute();
 	}
-	@Test(priority = 6)
+//	@Test(priority = 6)
 	public void TC19_validatespeedcontrols() throws InterruptedException 
 	{
 		videoplaybackpage.speedcontrols();

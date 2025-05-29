@@ -57,6 +57,9 @@ public class Subscriptionpage extends BaseClass{
 	@FindBy(xpath="//iframe[@class='razorpay-checkout-frame']")	
 	public WebElement frame;
 	
+	@FindBy(xpath="//div[@id='redesign-header']//button")	
+	public WebElement payments_window_closebtn;
+	
 	@FindBy(xpath="//span[text()='Payment Options']")	
 	public WebElement payments_window;
 	

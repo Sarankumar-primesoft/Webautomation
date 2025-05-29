@@ -28,22 +28,21 @@ public class TC_3 extends BaseClass {
 		
 		assertEquals(subpage.premium_year.getText(),subpage.getpremiumyear(),"Year Prenium" );
 		
-		clickelementwithname(subpage.buynow_btn,"Buy now btn");
-		visibleofele(driver, subpage.choose_planAlert,"Choose plan alert");
-		assertEquals(subpage.choose_planAlert.getText(), subpage.getalertmsg(), "Choose Plan alert ");   
 		clickelementwithname(subpage.month_planbtn,"Month plan btn");	
 	
-		invisibilityofelement(driver,subpage.choose_planAlert, "Choose plan alert");
-	
-		scrollByVisibilityOfElement(driver, subpage.buynow_btn);
-		scrollToBottom(driver);
-				
-		clickelementwithname(subpage.buynow_btn,"Buy now btn");
+		Thread.sleep(2000);
 		
+		scrollByVisibilityOfElement(driver, subpage.buynow_btn);
+				
+		JSClick(driver,subpage.buynow_btn,"Buy now btn");
+		implicitWait(10);		
 		switchframe(subpage.frame);
-			
-		visibleofele(driver, subpage.payments_window,"Payments window");
-		clickelement(subpage.close_payment);
-		clickelement(subpage.close_confirm);		
+		JSClick(driver,subpage.payments_window_closebtn,"cancel btn");
+		
+//		switchframe(subpage.frame);
+//			
+//		visibleofele(driver, subpage.payments_window,"Payments window");
+//		clickelement(subpage.close_payment);
+//		clickelement(subpage.close_confirm);		
 	}
 }

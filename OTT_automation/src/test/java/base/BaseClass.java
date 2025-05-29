@@ -76,7 +76,7 @@ public class BaseClass {
 	public static Logger logger = null;
 		
 	public BaseClass() {
-		
+
 		PageFactory.initElements(driver, this);
 	}
 
@@ -228,7 +228,6 @@ public class BaseClass {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
-
 	public static void navigateback() throws InterruptedException {
 		Thread.sleep(2000);
 		driver.navigate().back();
@@ -273,9 +272,7 @@ public class BaseClass {
 		Extentlogger.info("Scrolled to "+getElementName(ele));
 		logger.info("Scrolled to "+getElementName(ele));
 
-	}
-	
-
+	}	
 	public  void clickelement(WebElement element) {
 		if (element == null) {
 			throw new IllegalStateException("WebElement is null. Ensure PageFactory.initElements() was called.");

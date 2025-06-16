@@ -172,7 +172,7 @@ public class BaseClass {
 		driver.get("https://www.etvwin.com/home");
 	}
 	
-	@AfterSuite
+//	@AfterSuite
 	public void tearDown() throws Exception {
 		if (driver != null) {
 //			loginPage.logout();
